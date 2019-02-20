@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+  <title>NASA</title>
+</head>
+
+<body>
+  <main class="container-fluid">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2 class="my-4">Photos from Mars Rover 'Opportunity'</h2>
+        <p>Enter a date below:</p>
+        <form class="form-inline" onsubmit="app.controllers.nasaController.editDate(event)">
+          <div class="form-group mx-sm-3 mb-2">
+            <label for="date" class="sr-only">Date</label>
+            <input type="text" class="form-control" id="date" name="date" placeholder="yyyy-m-d">
+          </div>
+          <button type="submit" class="btn btn-info mb-2">submit</button>
+        </form>
+      </div>
+    </div>
+    <div id="pic-list" class="row">
+      <!-- <div class="col-12 col-md-6">
+      <div class="card">
+        <img src="IMG" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h2>TITLE</h2>
+          <h3>DATE</h3>
+          <p class="card-text">DESCRIPTION</p>
+        </div>
+      </div>
+    </div> -->
+    </div>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
+  <script type="module" src="app/main.js"></script>
+</body>
+
+</html>

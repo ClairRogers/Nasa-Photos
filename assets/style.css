@@ -1,0 +1,14 @@
+body {
+  font-family: 'Roboto Mono', monospace;
+  background-image: url(/assets/background.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh
+}
+.container-fluid {
+  background-color: #c19b8e91;
+}
+
+.form-inline {
+  justify-content: center;
+}
